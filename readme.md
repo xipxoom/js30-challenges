@@ -1,4 +1,4 @@
-# Jabascript 30
+# Javascript 30
 ## Lesson 1
 ### (Semi)blind Attempt
 
