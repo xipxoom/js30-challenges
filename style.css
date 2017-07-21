@@ -1,0 +1,26 @@
+body {
+  background: url(irongrip.png) #2c2c2c;
+  font: 16px sans-serif;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.notes {
+  margin: 50% auto 50% auto;
+  position: relative;
+  text-align: center;
+}
+.note {
+  display: inline-block;
+  border: 3px solid grey;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 5px;
+  width: 7%;
+}
+.sound {
+  display: block;
+  color: lightgoldenrodyellow;
+}
+.note kbd {
+  font-size: 200%;
+}
