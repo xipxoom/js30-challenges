@@ -1,35 +1,62 @@
 /*jshint browser: true*/
+
 document.addEventListener("DOMContentLoaded", function(event) {
   var soundArray = ["clap", "hihat", "kick", "openhat", "boom",
                     "ride", "snare", "tom", "tink"];
+  
+
   function setAudioClick(audio) {
-    document.getElementById(audio).onclick = function(event) {
-      new Audio("sounds/" + audio + ".wav").play();
+    var ele = document.getElementById(audio);
+    ele.onclick = function(event) {
+      animateButton(ele);
+      playWav(audio);
     };
   }
+  
+  function playWav(audio) {
+    new Audio("sounds/" + audio + ".wav").play();
+  }
+  
+  function animateButton(ele) {
+    ele.classList.toggle("play");
+    setTimeout(function(){
+      ele.classList.toggle("play");
+    }, 200);
+  }
+  
+  // Setup all our on-clicks
   for (var i=0; i<soundArray.length; i++) {
     setAudioClick(soundArray[i]);
   }
   
   document.addEventListener("keypress", function(event){
     if (event.key === "a" || event.key === "A") {
-      new Audio("sounds/clap.wav").play();
+      animateButton(document.getElementById("clap"));
+      playWav("clap");
     } else if (event.key === "s" || event.key === "S") {
-      new Audio("sounds/hihat.wav").play();
+      animateButton(document.getElementById("hihat"));
+      playWav("hihat");
     } else if (event.key === "d" || event.key === "D") {
-      new Audio("sounds/kick.wav").play();
+      animateButton(document.getElementById("kick"));
+      playWav("kick");
     } else if (event.key === "f" || event.key === "F") {
-      new Audio("sounds/openhat.wav").play();
+      animateButton(document.getElementById("openhat"));
+      playWav("openhat");
     } else if (event.key === "g" || event.key === "G") {
-      new Audio("sounds/boom.wav").play();
+      animateButton(document.getElementById("boom"));
+      playWav("boom");
     } else if (event.key === "h" || event.key === "H") {
-      new Audio("sounds/ride.wav").play();
+      animateButton(document.getElementById("ride"));
+      playWav("ride");
     } else if (event.key === "j" || event.key === "J") {
-      new Audio("sounds/snare.wav").play();
+      animateButton(document.getElementById("snare"));
+      playWav("snare");
     } else if (event.key === "k" || event.key === "K") {
-      new Audio("sounds/tom.wav").play();
+      animateButton(document.getElementById("tom"));
+      playWav("tom");
     } else if (event.key === "l" || event.key === "L") {
-      new Audio("sounds/tink.wav").play();
+      animateButton(document.getElementById("tink"));
+      playWav("tink");
     }
   }, false);
 });
