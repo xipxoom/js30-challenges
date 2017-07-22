@@ -17,6 +17,7 @@ body {
   padding: 5px;
   margin: 5px;
   width: 7%;
+  min-width: 4em;
 }
 .sound {
   display: block;
@@ -27,5 +28,7 @@ body {
 }
 .play {
   border-color: indianred;
-  border-radius: 0px;
+/*  border-radius: 0px;*/
+  transform: scale(1.2);
+  box-shadow: 2px 2px 4px 4px indianred, -2px -2px 4px 4px indianred;
 }
