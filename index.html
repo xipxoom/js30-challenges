@@ -5,16 +5,16 @@
   <meta name='viewport' content = 'width=device-width, initial-scale=1'>
   <title>CSS Variables are pretty flipping awesome... and awkward</title>
   <link rel='stylesheet' href='style.css'>
-  <script src='app.js'></script>
+  <script defer src='app.js'></script>
 </head>
 <body>
   
   <div class='page'>
     <h1>CSS Variable Control with <span class='highlight'>Javascript</span></h1>
     <div class='controls'>
-      <label>Border<input type='range'></label>
-      <label>Blur<input type='range'></label>
-      <label>Color<input type='color'></label>
+      <label>Spacing<input type='range' min='0' max='25' value='0'></label>
+      <label>Blur<input type='range' min='0' max='25' value='0'></label>
+      <label>Color<input type='color' value='#badace'></label>
     </div>
     <img src='https://source.unsplash.com/8BxRYuPkzkU/600x600'>
   </div>
