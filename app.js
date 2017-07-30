@@ -94,6 +94,10 @@ console.log(filteredBoulevards);
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+// Note - don't technically have to do anything.  The array appears already sorted.
+//        But the below should work if it weren't.
+people.sort();
+console.log(people);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
