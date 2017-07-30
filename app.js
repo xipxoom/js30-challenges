@@ -49,6 +49,16 @@ console.log(mappedInventorsObj);
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
+inventors.sort(function(a, b) {
+  if (a.year < b.year) {
+    return -1;
+  } else if (a.year > b.year) {
+    return 1;
+  } else {
+    return 0;
+  }
+});
+console.log(inventors);
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live?
