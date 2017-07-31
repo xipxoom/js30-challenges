@@ -1,0 +1,37 @@
+/* Variables */
+:root {
+  --spacing: 0px;
+  --blur: 0px;
+  --baseColor: #badace;
+}
+
+body {
+  font: 16px sans-serif;
+  text-align: center;
+  background: black;
+  color: white;
+  width: 100%;
+}
+
+label {
+  font-size: 120%;
+  margin: 15px;
+}
+
+input {
+  margin: 15px;
+}
+
+img {
+  background: var(--baseColor);
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+}
+
+.controls {
+  margin: 30px;
+}
+
+.highlight {
+  color: var(--baseColor);
+}
