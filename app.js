@@ -84,16 +84,17 @@ const reducedInventors = inventors.reduce( (total, i)=> {
 console.log(reducedInventors);
 
 // 5. Sort the inventors by years lived
-inventors.sort(function(a,b){
-  if ((a.passed - a.year) < (b.passed - b.year)) {
-    return -1;
-  } else if ((a.passed - a.year) > (b.passed - b.year)) {
-    return 1;
-  } else {
-    return 0;
-  }
-});
-console.log(inventors);
+//inventors.sort(function(a,b){
+//  if ((a.passed - a.year) < (b.passed - b.year)) {
+//    return -1;
+//  } else if ((a.passed - a.year) > (b.passed - b.year)) {
+//    return 1;
+//  } else {
+//    return 0;
+//  }
+//});
+inventors.sort( (a,b)=> a.passed - a.year < b.passed - b.year ? -1 : 1 );
+console.table(inventors);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
