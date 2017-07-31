@@ -41,18 +41,20 @@ console.table(filteredInventors);
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
 // Note - I'm assuming they don't want an array of objects here
-const mappedInventors = inventors.map(function(inventor) {
-  return inventor.first + ' ' + inventor.last;
-});
+//const mappedInventors = inventors.map(function(inventor) {
+//  return inventor.first + ' ' + inventor.last;
+//});
+// Let's do it ES6 style instead:
+const mappedInventors = inventors.map( (inventor)=> `${inventor.first} ${inventor.last}` );
 console.log(mappedInventors);
 // Note - But let's do it again with objects, just in case.
-const mappedInventorsObj = inventors.map(function(inventor){
-  return {
-    first: inventor.first,
-    last: inventor.last
-  };
-});
-console.log(mappedInventorsObj);
+//const mappedInventorsObj = inventors.map(function(inventor){
+//  return {
+//    first: inventor.first,
+//    last: inventor.last
+//  };
+//});
+//console.log(mappedInventorsObj);
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
