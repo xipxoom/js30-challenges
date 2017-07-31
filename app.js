@@ -74,7 +74,11 @@ console.table(inventors);
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live?
 // Note - should return 861... probably
-var reducedInventors = inventors.reduce(function(total, i) {
+//var reducedInventors = inventors.reduce(function(total, i) {
+//  return total + i.passed - i.year;
+//}, 0);
+// ES6 style again!
+const reducedInventors = inventors.reduce( (total, i)=> {
   return total + i.passed - i.year;
 }, 0);
 console.log(reducedInventors);
