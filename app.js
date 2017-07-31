@@ -102,3 +102,13 @@ console.log(people);
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+// Note - not sure what exactly Wes wants from us here; the question is vague
+// Note - Okay, the video says he wants an object.  I can do that!
+const reducedData = data.reduce(function(total,itm){
+  if (!total[itm]) {
+    total[itm] = 0;
+  }
+  total[itm]++;
+  return total;
+},{});
+console.log(reducedData);
