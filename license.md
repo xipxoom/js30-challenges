@@ -9,4 +9,4 @@ This project is inspired by Wes Bos for his Javascript 30 Day Challenge free cou
 These files are based conceptually on the above course. As I cannot identify a license for the course files I, again, will not presume to spell out any limitations or freedoms. Use your head and don't be a dick. :-)
 
 ## The rest
-Any other files will be called out in the subfolder license.
+Any other files will be called out as needed in the subfolder license.
